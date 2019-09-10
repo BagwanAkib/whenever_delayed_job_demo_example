@@ -18,12 +18,12 @@
 # end
 
 # Learn more: http://github.com/javan/whenever
-set :environment, ENV['RAILS_ENV']#"development"
+set :environment,"development"
 set :output, "#{Whenever.path}/log/whenever.log"
 set :job_template, nil?
 # This will execute on after each 1 minute
 every 1.minute do
-    # env :PATH, ENV['PATH']
+    env :PATH, ENV['PATH']
     runner "DemoJobJob.perform_later()"
     command "echo 'here you can use raw cron syntax too'"
 end

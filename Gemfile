@@ -7,6 +7,7 @@ gem 'whenever' # , require: false
 
 # Delayed job gem
 gem 'delayed_job_active_record'
+gem 'daemons'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
