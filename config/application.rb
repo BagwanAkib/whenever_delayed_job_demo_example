@@ -23,7 +23,7 @@ module WheneverDelayedJobDemoExample
   Delayed::Worker.sleep_delay = 60
 
   # delay_jobs while application is in testing or development
-  Delayed::Worker.delay_jobs = true
+  Delayed::Worker.delay_jobs = false
   
   # default behavior is to read 5 jobs from the queue when finding an available job.
   Delayed::Worker.read_ahead
